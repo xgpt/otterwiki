@@ -47,7 +47,7 @@
   <input name="name" type="text" class="form-control" id="name" value="{{current_user.name if current_user.name}}" {% if
     not auth_supported_features['editing'] %}disabled{% endif %}>
     <div class="form-text">
-      Please note that changing the Name doesn't not change anything in the edit history.
+      Please note that changing the Name does not change anything in the edit history.
     </div>
   </div>
   <input class="btn btn-primary" type="submit" value="Update Name" {% if not auth_supported_features['editing']
